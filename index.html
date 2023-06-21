@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adesope Muiz - Web Developer</title>
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Box Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="#" class="nav__logo">Adesope Muiz</a>
+      </div>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <!-- HOME -->
+    <section class="home" id="home">
+      <div class="home__container bd-grid">
+        <h1 class="home__title"><span>Mu</span><br>IZ.</h1>
+
+        <div class="home__scroll">
+          <a href="#about" class="home__scroll-link"><i class="bx bx-up-arrow-alt"></i>Scroll down</a>
+        </div>
+
+        <img src="perfil.png" alt="" class="home__img">
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <h2 class="section-title">About</h2>
+
+      <div class="about__container bd-grid">
+        <div class="about__img">
+          <img src="perfil.png" alt="">
+        </div>
+
+        <div>
+          <h2 class="about__subtitle">I'm Adesope Muiz</h2>
+          <span class="about__profession">Web designer</span>
+          <p class="about__text">I am a web designer specializing in creating visually stunning and user-friendly websites.
+            With expertise in HTML, CSS, and JavaScript, I craft engaging digital experiences that captivate and inspire.</p>
+
+          <div class="about__social">
+            <a href="https://www.linkedin.com/in/Adesopemuiz" class="about__social-icon" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/AdesopeMuiz" class="about__social-icon" target="_blank"><i class="bx bxl-github"></i></a>
+            <a href="https://wa.me/2348179154249" class="about__social-icon" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills__container bd-grid">
+        <div class="skills__box">
+          <h3 class="skills__subtitle">Development</h3>
+          <span class="skills__name">HTML</span>
+          <span class="skills__name">CSS</span>
+          <span class="skills__name">JavaScript</span>
+          <span class="skills__name">SCSS</span>
+          <span class="skills__name">Python</span>
+          <span class="skills__name">Vue</span>
+
+          <h3 class="skills__subtitle">Design</h3>
+          <span class="skills__name">Bootstrap</span>
+          <span class="skills__name">Tailwind</span>
+          <span class="skills__name">Figma</span>
+        </div>
+
+        <div class="skills__img">
+          <img src="skil.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact__container bd-grid">
+        <div class="contact__info">
+          <h3 class="contact__subtitle">EMAIL</h3>
+          <span class="contact__text">Adesope@quizzify.com.ng</span>
+
+          <h3 class="contact__subtitle">PHONE</h3>
+          <span class="contact__text">+2348179154249</span>
+
+          <h3 class="contact__subtitle">ADDRESS</h3>
+          <span class="contact__text">Lagos, Nigeria</span>
+        </div>
+
+        <form action="contact.php" class="contact__form" id="contact-form" onsubmit="submitForm(event)" method="post">
+          <div class="contact__inputs">
+            <input type="text" id="name" name="name" placeholder="Name" class="contact__input" required>
+            <input type="email" id="email" name="email" placeholder="Email" class="contact__input" required>
+          </div>
+
+          <textarea id="message" name="message" cols="0" rows="10" class="contact__input" required></textarea>
+          <div id="success-message"></div>
+
+          <input type="submit" value="Submit" class="contact__button">
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer section">
+    <div class="footer__container bd-grid">
+      <div class="footer__data">
+        <h2 class="footer__title">Adesope Muiz</h2>
+        <p class="footer__text">I'm Adesope Muiz and this is my personal website</p>
+      </div>
+
+      <div class="footer__data">
+        <h2 class="footer__title">EXPLORE</h2>
+        <ul>
+          <li><a href="#home" class="footer__link">Home</a></li>
+          <li><a href="#about" class="footer__link">About</a></li>
+          <li><a href="#skills" class="footer__link">Skills</a></li>
+          <li><a href="#contact" class="footer__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__data">
+        <h2 class="footer__title">FOLLOW</h2>
+        <a href="https://www.facebook.com/Official.Adesope" class="footer__social" target="_blank"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/adesopemuiz3" class="footer__social" target="_blank"><i class="bx bxl-instagram"></i></a>
+        <a href="https://twitter.com/adesopemuiz3" class="footer__social" target="_blank"><i class="bx bxl-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function submitForm(event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  // Get the form data
+  const form = document.getElementById('contact-form');
+  const formData = new FormData(form);
+
+  // Send the form data to the server using AJAX
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', 'contact.php', true);
+  xhr.onload = function () {
+    if (xhr.status === 200) {
+      const response = xhr.responseText;
+      if (response === 'success') {
+        // Show a success message or perform any other action
+        document.getElementById('success-message').innerHTML = 'message submitted successfully.';
+        form.reset();
+      } else {
+        // Show an error message or perform any other action
+        document.getElementById('success-message').innerHTML = 'Message submission failed.';
+      }
+    }
+  };
+  xhr.send(formData);
+}
+
+// Attach the form submission event listener
+document.getElementById('contact-form').addEventListener('submit', submitForm);
+
+  </script>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+   <script src="https://unpkg.com/scrollreveal"></script>
+  
+   <!--===== MAIN JS =====-->
+   <script src="main.js"></script>
+</body>
+
+</html>

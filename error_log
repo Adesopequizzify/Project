@@ -1,0 +1,38 @@
+[14-Jun-2023 06:57:21 UTC] PHP Warning:  Undefined array key "name" in /home/quizwift/adesope.portfolio/contact.php on line 6
+[14-Jun-2023 06:57:21 UTC] PHP Warning:  Undefined array key "email" in /home/quizwift/adesope.portfolio/contact.php on line 7
+[14-Jun-2023 06:57:21 UTC] PHP Warning:  Undefined array key "message" in /home/quizwift/adesope.portfolio/contact.php on line 8
+[14-Jun-2023 06:57:21 UTC] PHP Warning:  Undefined variable $conn in /home/quizwift/adesope.portfolio/contact.php on line 13
+[14-Jun-2023 06:57:21 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/quizwift/adesope.portfolio/contact.php:13
+Stack trace:
+#0 /home/quizwift/adesope.portfolio/contact.php(13): mysqli_query(NULL, 'INSERT INTO con...')
+#1 {main}
+  thrown in /home/quizwift/adesope.portfolio/contact.php on line 13
+[14-Jun-2023 07:12:57 UTC] PHP Warning:  Undefined array key "name" in /home/quizwift/adesope.portfolio/contact.php on line 6
+[14-Jun-2023 07:12:57 UTC] PHP Warning:  Undefined array key "email" in /home/quizwift/adesope.portfolio/contact.php on line 7
+[14-Jun-2023 07:12:57 UTC] PHP Warning:  Undefined array key "message" in /home/quizwift/adesope.portfolio/contact.php on line 8
+[14-Jun-2023 07:12:57 UTC] PHP Warning:  Undefined variable $conn in /home/quizwift/adesope.portfolio/contact.php on line 13
+[14-Jun-2023 07:12:57 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/quizwift/adesope.portfolio/contact.php:13
+Stack trace:
+#0 /home/quizwift/adesope.portfolio/contact.php(13): mysqli_query(NULL, 'INSERT INTO con...')
+#1 {main}
+  thrown in /home/quizwift/adesope.portfolio/contact.php on line 13
+[14-Jun-2023 07:42:54 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'quizwift_contact_form.contacts' doesn't exist in /home/quizwift/adesope.portfolio/contact.php:13
+Stack trace:
+#0 /home/quizwift/adesope.portfolio/contact.php(13): mysqli_query(Object(mysqli), 'INSERT INTO con...')
+#1 {main}
+  thrown in /home/quizwift/adesope.portfolio/contact.php on line 13
+[14-Jun-2023 07:43:01 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'quizwift_contact_form.contacts' doesn't exist in /home/quizwift/adesope.portfolio/contact.php:13
+Stack trace:
+#0 /home/quizwift/adesope.portfolio/contact.php(13): mysqli_query(Object(mysqli), 'INSERT INTO con...')
+#1 {main}
+  thrown in /home/quizwift/adesope.portfolio/contact.php on line 13
+[14-Jun-2023 07:51:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'timestamp' in 'field list' in /home/quizwift/adesope.portfolio/contact.php:13
+Stack trace:
+#0 /home/quizwift/adesope.portfolio/contact.php(13): mysqli_query(Object(mysqli), 'INSERT INTO con...')
+#1 {main}
+  thrown in /home/quizwift/adesope.portfolio/contact.php on line 13
+[14-Jun-2023 07:51:11 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'timestamp' in 'field list' in /home/quizwift/adesope.portfolio/contact.php:13
+Stack trace:
+#0 /home/quizwift/adesope.portfolio/contact.php(13): mysqli_query(Object(mysqli), 'INSERT INTO con...')
+#1 {main}
+  thrown in /home/quizwift/adesope.portfolio/contact.php on line 13
